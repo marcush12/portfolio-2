@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MSCode | Portfolio </title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="assets/css/bootstrap.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css" />
+
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+	  <!-- build:css /assets/styles/styles.css -->
+	  <link rel="stylesheet"  href="/temp/styles/styles.css">
+	  <!-- endbuild -->
+
+	  <!-- build:js /assets/scripts/Vendor.js -->
+	  <script src="/temp/scripts/Vendor.js"></script>
+	  <!-- endbuild -->
+
+
+</head>
+<body>
+	<div class="loader">
+		<div class="inner"></div>
+	</div>
+	<!-- para incluir os slides vai em scripts e descomenta bloco var Type - linha 23 a 29  -->
+	<!-- <div id="slides">
+		<div class="overlay"></div>
+		<div class="slides-container">
+		    <img src="assets/images/slide1.jpg" alt="">
+		    <img src="assets/images/slide2.jpg" alt="">
+		    <img src="assets/images/slide3.jpg" alt="">
+		</div>
+		<div class="titleMessage">
+			<div class="heading">
+				<p class="main">MSCode</p>
+				<p class="sub typed"></p>
+			</div>
+		</div>
+		<nav class="slides-navigation">
+		    <a href="#" class="next"></a>
+		    <a href="#" class="prev"></a>
+		</nav>
+	</div> -->
+
+	<nav id="navigation" class="navbar navbar-expand-lg">
+        <div class="navbar-brand">
+            <a href="#"><img src="assets/images/mscodelogo.png" class="img-responsive" alt=""></a>
+        </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#portfolio">Portfolio <span class="sr-only"></span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Habilidades</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#about">Sobre <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contato</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#">Disabled</a>
+          </li> -->
+        </ul>
+      </div>
+
+    </nav>
+
+	<div id="portfolio" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="heading">
+                    <h2>PORTFOLIO</h2>
+                    <p>Dentro da imagem clique no botão à direita para ver o trabalho</p>
+                </div>
+                <div class="filter">
+                    <ul id="filters">
+                        <li><a href="#" data-filter="*" class="current">TUDO</a></li>
+                        <li><a href="#" data-filter=".websites">Sites</a></li>
+                        <li><a href="#" data-filter=".landing-page">Landing Pages</a></li>
+                        <li><a href="#" data-filter=".wp">WordPress</a></li>
+                        <li><a href="#" data-filter=".apps">Apps</a></li>
+                        <!-- <li><a href="#" data-filter=".mscode">MS Code</a></li> -->
+                    </ul>
+                </div>
+                <div class="itemsContainer">
+                    <ul class="items">
+                        <li onclick="" class="websites col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                            <div class="item">
+                                <!--square pics-->
+                                <img src="assets/images/portfolio/thumbnails/belltollsartsquare.jpg"  alt="">
+                                <div class="icons">
+                                    <a href="assets/images/portfolio/belltollsart.jpg" class="openButton" data-fancybox data-caption="Loja virtual integrada ao PayPal" title="Ver imagem"><i class="fa fa-search"></i></a>
+                                    <a href="belltollsart" target="_blank" class="projectLink" ><i class="fa fa-link" ></i></a>
+                                </div>
+                                <div class="imageOverlay"></div>
+                            </div>
+                        </li>
+                        <li onclick="" class="landing-page col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                            <div class="item">
+                                <!--square pics-->
+                                <img src="assets/images/portfolio/thumbnails/book_storesquare.jpg" alt="">
+                                <div class="icons">
+                                    <a href="assets/images/portfolio/book_store.jpg" class="openButton" data-fancybox data-caption="Livraria Coração" title="Ver imagem"><i class="fa fa-search"></i></a>
+                                    <a href="livraria" target="_blank" class="projectLink"><i class="fa fa-link"></i></a>
+                                </div>
+                                <div class="imageOverlay"></div>
+                            </div>
+                        </li>
+                        <li onclick="" class="wp col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                            <div class="item">
+                                <!--square pics-->
+                                <img src="assets/images/portfolio/thumbnails/uninovaerasquare.jpg" alt="">
+                                <div class="icons">
+                                    <a href="assets/images/portfolio/uninovaera.jpg" class="openButton" data-fancybox data-caption="Site de Universidade em WordPress com tema personalizado" title="Ver imagem"><i class="fa fa-search"></i></a>
+                                    <a href="http://mscode.com.br/novaera/index.php" target="_blank" class="projectLink"><i class="fa fa-link"></i></a>
+                                </div>
+                                <div class="imageOverlay"></div>
+                            </div>
+                        </li>
+
+                        <div class="clear"></div>
+                        <li onclick="" class="websites col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                            <div class="item">
+                                <!--square pics-->
+                                <img src="assets/images/portfolio/thumbnails/expresssquare.jpg"  alt="">
+                                <div class="icons">
+                                    <a href="assets/images/portfolio/express.jpg" class="openButton" data-fancybox data-caption="Peça comida por aqui!" title="Ver imagem"><i class="fa fa-search"></i></a>
+                                    <a href="express" target="_blank" class="projectLink"><i class="fa fa-link"></i></a>
+                                </div>
+                                <div class="imageOverlay"></div>
+                            </div>
+                        </li>
+                        <li onclick="" class="landing-page col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                            <div class="item">
+                                <!--square pics-->
+                                <img src="assets/images/portfolio/thumbnails/homefoodsquare.jpg" alt="">
+                                <div class="icons">
+                                    <a href="assets/images/portfolio/homefood.jpg" class="openButton" data-fancybox data-caption="Adeus fast food, viva a food fast!" title="Ver imagem"><i class="fa fa-search"></i></a>
+                                    <a href="homefood" target="_blank" class="projectLink"><i class="fa fa-link"></i></a>
+                                </div>
+                                <div class="imageOverlay"></div>
+                            </div>
+                        </li>
+                        <li onclick="" class="landing-page col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                            <div class="item">
+                                <!--square pics-->
+                                <img src="assets/images/portfolio/thumbnails/landing-pagesquare.jpg" alt="">
+                                <div class="icons">
+                                    <a href="assets/images/portfolio/landing-page.jpg" class="openButton" data-fancybox data-caption="Site para compartilhar imagens e vídeos" title="Ver imagem"><i class="fa fa-search"></i></a>
+                                    <a href="landing-page" target="_blank" class="projectLink"><i class="fa fa-link"></i></a>
+                                </div>
+                                <div class="imageOverlay"></div>
+                            </div>
+                        </li>
+                        <li onclick="" class="websites col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                            <div class="item">
+                                <!--square pics-->
+                                <img src="assets/images/portfolio/thumbnails/levezaspasquare.jpg" alt="">
+                                <div class="icons">
+                                    <a href="assets/images/portfolio/levezaspa.jpg" class="openButton" data-fancybox data-caption="SPA somente para mulheres" title="Ver imagem"><i class="fa fa-search"></i></a>
+                                    <a href="levezaspa" target="_blank" class="projectLink"><i class="fa fa-link"></i></a>
+                                </div>
+                                <div class="imageOverlay"></div>
+                            </div>
+                        </li>
+                        <div class="clear"></div>
+                        <li onclick="" class="landing-page col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                            <div class="item">
+                                <!--square pics-->
+                                <img src="assets/images/portfolio/thumbnails/photomaissquare.jpg" alt="">
+                                <div class="icons">
+                                    <a href="assets/images/portfolio/photomais.jpg" class="openButton" data-fancybox data-caption="Especializados em fotografias e vídeos" title="Ver imagem"><i class="fa fa-search"></i></a>
+                                    <a href="photomais" target="_blank" class="projectLink"><i class="fa fa-link"></i></a>
+                                </div>
+                                <div class="imageOverlay"></div>
+                            </div>
+                        </li>
+                        <li onclick="" class="websites col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                            <div class="item">
+                                <!--square pics-->
+                                <img src="assets/images/portfolio/thumbnails/shopsquare.jpg" alt="">
+                                <div class="icons">
+                                    <a href="assets/images/portfolio/shop.jpg" class="openButton" data-fancybox data-caption="Loja virtual de camisetas com framework Laravel, integrável ao PayPal" title="Ver imagem"><i class="fa fa-search"></i></a>
+                                    <a href="shop" target="_blank" class="projectLink"><i class="fa fa-link"></i></a>
+                                </div>
+                                <div class="imageOverlay"></div>
+                            </div>
+                        </li>
+                        <div class="clear"></div>
+                        <li onclick="" class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                            <div class="item">
+                                <!--square pics-->
+                                <img src="assets/images/portfolio/thumbnails/slotifysquare.jpg" alt="">
+                                <div class="icons">
+                                    <a href="assets/images/portfolio/slotify.jpg" class="openButton" data-fancybox data-caption="Clone do Spotify" title="Ver imagem"><i class="fa fa-search"></i></a>
+                                    <a href="slotify" target="_blank" class="projectLink"><i class="fa fa-link"></i></a>
+                                </div>
+                                <div class="imageOverlay"></div>
+                            </div>
+                        </li>
+                        <li onclick="" class="landing-page col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                            <div class="item">
+                                <!--square pics-->
+                                <img src="assets/images/portfolio/thumbnails/bootstrap4sitesquare.jpg" alt="">
+                                <div class="icons">
+                                    <a href="assets/images/portfolio/bootstrap4site.jpg" class="openButton" data-fancybox data-caption="Landing page para desenvolvedores web" title="Ver imagem"><i class="fa fa-search"></i></a>
+                                    <a href="bootstrap4site" target="_blank" class="projectLink"><i class="fa fa-link"></i></a>
+                                </div>
+                                <div class="imageOverlay"></div>
+                            </div>
+                        </li>
+
+                        <li onclick="" class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                            <div class="item">
+                                <!--square pics-->
+                                <img src="assets/images/portfolio/thumbnails/doodlesquare.jpg" alt="">
+                                <div class="icons">
+                                    <a href="assets/images/portfolio/doodle.jpg" class="openButton" data-fancybox data-caption="Pesquise com Doodle!" title="Ver imagem"><i class="fa fa-search"></i></a>
+                                    <a href="doodle" target="_blank" class="projectLink"><i class="fa fa-link"></i></a>
+                                </div>
+                                <div class="imageOverlay"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="skills" class="skillsSection section">
+            <div class="container">
+                <div class="row">
+                    <!-- text-center bootstrap class automatic -->
+                    <div class="col-md-12 text-center">
+                        <h2>HABILIDADES TÉCNICAS</h2>
+                        <p>Representação de cada habilidade</p>
+                    </div>
+                    <div class="owl-carousel owl-theme">
+                        <div class="skill">
+                            <span class="chart" data-percent="80">
+                                <span class="percent">80</span>
+                                <canvas height="152" width="152"></canvas>
+                            </span>
+                            <h4>PHP</h4>
+                            <p>Usado na maioria de projetos para web</p>
+                        </div>
+
+                        <div class="skill">
+                            <span class="chart" data-percent="90">
+                                <span class="percent">90</span>
+                                <canvas height="152" width="152"></canvas>
+                            </span>
+                            <h4>HTML</h4>
+                            <p>Usado em todos os projetos para web</p>
+                        </div>
+
+                        <div class="skill">
+                            <span class="chart" data-percent="80">
+                                <span class="percent">80</span>
+                                <canvas height="152" width="152"></canvas>
+                            </span>
+                            <h4>CSS</h4>
+                            <p>Usado em todos os projetos para web</p>
+                        </div>
+
+                        <div class="skill">
+                            <span class="chart" data-percent="60">
+                                <span class="percent">60</span>
+                                <canvas height="152" width="152"></canvas>
+                            </span>
+                            <h4>JavaScript</h4>
+                            <p>Usado em parte dos projetos para web</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+<!-- Modal -->
+    <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Contato</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="align-items-center modal-body">
+                    <form role="form" method="post" id="reused_form" >
+                        <p> Envie sua mensagem pelo formulário abaixo e responderemos o mais rápido possível. </p>
+                        <div class="form-group">
+                            <label for="name"> Nome:</label>
+                            <input type="text" class="form-control" id="name" name="name" required maxlength="50">
+                        </div>
+                        <div class="form-group">
+                            <label for="email"> Email:</label>
+                            <input type="email" class="form-control" id="email" name="email" required maxlength="50">
+                        </div>
+                        <div class="form-group">
+                            <label for="name"> Mensagem:</label>
+                            <textarea class="form-control" type="textarea" name="message" id="message" placeholder="Sua Mensagem Aqui" maxlength="6000" rows="7"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-lg btn-success btn-block" id="btnContactUs">Enviar &rarr;</button>
+                    </form>
+                    <div id="success_message" style="width:100%; height:100%; display:none; "> <h3>Sua mensagem foi enviada com sucesso!</h3> </div>
+                    <div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Error</h3> Desculpe mas, houve um erro ao enviar a sua mensagem. Tente novamente.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- end Modal -->
+
+    <div id="about" class="section">
+        <div class="container h-100">
+            <div class="row h-100 justify-content-center">
+                <div class="col-md-7">
+                    <br>
+                    <h4>MSCode: criação de sites</h4>
+                    <br>
+                    <p class="text-justify">Atualmente a MSCode é coordenada por Marcos Santos de São Paulo/SP. Graduado em Exatas pela USP, atuou vários anos como professor em Faculdade de Ciências da Computação. A MSCode oferece um serviço de excelência na criação de sites para os clientes, procurando satisfazê-los integralmente em suas instâncias. A MSCode tem experiência em programação com linguagens tais como JavaScript, PHP (Laravel, WordPress), HTML e CSS.</p>
+                    <p class="text-justify">Para maiores informações, entre em <a href="#contact">contato</a> conosco.
+                    <br>
+                    Teremos enorme prazer em responder. </p>
+
+                </div>
+                <div class="col-md-5 text-center justify-content-center">
+                    <img class="aboutImage" src="assets/images/about.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact" class="contactSection section">
+        <div class="col-md-12 text-center">
+            <p class="subHeading">Quer mais informações?</p>
+            <h2>Escreva para a gente pelo botão abaixo.</h2>
+            <br>
+            <!-- Botão para acionar modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalExemplo">
+          Contato
+        </button>
+        </div>
+    </div>
+
+    <div class="copyrightSection">
+        <div class="col-md-12 text-center">
+            <p>&copy; Copyright 2019 | elaborado por <a href="https://mscode.com.br/">MSCode</a></p>
+        </div>
+    </div>
+
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js""></script>
+
+    <!-- <script src="assets/js/jquery.superslides.min.js"></script> -->
+    <script src="assets/js/jquery.easypiechart.min.js"></script>
+    <!-- <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/typed.min.js"></script> -->
+
+
+    <script src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/form.js"></script>
+
+  <!-- build:js /assets/scripts/App.js -->
+  <script src="/temp/scripts/App.js"></script>
+  <!-- endbuild -->
+
+</body>
+</html>
